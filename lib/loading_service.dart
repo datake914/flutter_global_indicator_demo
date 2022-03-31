@@ -7,14 +7,7 @@ final loadingServiceProvider =
 
 /// LoadingService represents interfaces to control the loading indicator.
 class LoadingService extends StateNotifier<bool> {
-  LoadingService._() : super(false);
-
-  /// Returns a singleton [LoadingService] instance.
-  factory LoadingService() {
-    return _instance;
-  }
-
-  static final _instance = LoadingService._();
+  LoadingService() : super(false);
 
   int _count = 0;
 
